@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Social Media - Rohi's Charity & Awareness</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #e9f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        /* Fixed header and navbar container */
+        .sticky-container {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            transition: transform 0.3s ease-in-out;
+            background: transparent;
+        }
+
+        .hidden {
+            transform: translateY(-100%);
+        }
+
+        header {
+            background-color: #2a9d8f;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+            header h1 {
+                margin: 0;
+                font-size: 2.5em;
+            }
+
+        nav {
+            background: #264653;
+            padding: 10px;
+            text-align: center;
+        }
+
+            nav a {
+                color: #f4a261;
+                text-decoration: none;
+                margin: 0 15px;
+                font-size: 16px;
+                transition: color 0.3s;
+            }
+
+                nav a:hover {
+                    color: #e76f51;
+                }
+        /* Spacer so content is not hidden behind header */
+        .spacer {
+            height: 160px;
+        }
+
+        .container {
+            padding: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .content-section {
+            background: #fff;
+            margin-bottom: 40px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+            .content-section h2 {
+                color: #264653;
+                margin-bottom: 15px;
+            }
+        /* Improved Instagram grid */
+        .instagram-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .instagram-slot {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+            flex: 1 1 300px;
+            max-width: 300px;
+        }
+
+            .instagram-slot:hover {
+                transform: scale(1.05);
+            }
+
+            .instagram-slot img {
+                width: 100%;
+                display: block;
+            }
+            /* Gradient overlay for text readability */
+            .instagram-slot::after {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                height: 40%;
+                background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+                z-index: 1;
+            }
+
+            .instagram-slot p {
+                position: absolute;
+                bottom: 10px;
+                left: 10px;
+                margin: 0;
+                color: #fff;
+                font-size: 1.1em;
+                font-weight: bold;
+                z-index: 2;
+            }
+        /* Charity cards */
+        .charity-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .charity-card {
+            background: #f0f4f8;
+            padding: 15px;
+            border-left: 5px solid #2a9d8f;
+            border-radius: 8px;
+            flex: 1 1 300px;
+            max-width: 300px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+            .charity-card h3 {
+                margin-top: 0;
+                color: #264653;
+            }
+
+            .charity-card p {
+                margin: 10px 0;
+                font-size: 0.95em;
+            }
+
+            .charity-card a {
+                color: #2a9d8f;
+                text-decoration: none;
+                font-weight: bold;
+            }
+
+                .charity-card a:hover {
+                    text-decoration: underline;
+                }
+
+        footer {
+            background: #2a9d8f;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <!-- Fixed header and navbar -->
+    <div class="sticky-container" id="stickyContainer">
+        <header>
+            <h1>Social Media</h1>
+            <p>Connect with us &amp; Spread the Word</p>
+        </header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="poverty-facts.html">Poverty Facts</a>
+            <a href="social-media.html">Social Media</a>
+            <a href="take-action.html">Take Action</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </div>
+
+    <!-- Spacer so content is not hidden behind header -->
+    <div class="spacer"></div>
+
+    <div class="container">
+        <!-- Instagram Feed Section -->
+        <section class="content-section" id="instagram-feed">
+            <h2>Our Instagram Feed</h2>
+            <div class="instagram-grid">
+                <!-- Instagram Post Slot 1 -->
+                <div class="instagram-slot">
+                    <a href="https://www.instagram.com/rohis_charity/" target="_blank">
+                        <img src="C:\Users\rRohi\Downloads\Charity Website\Chairity- Website\images\17.png" alt="Instagram Post 1">
+                        <p>Did you know that 30% of children in Wales live in poverty, and notably, 26% of these children are from working households?</p>
+                    </a>
+                </div>
+                <!-- Instagram Post Slot 2 -->
+                <div class="instagram-slot">
+                    <a href="https://www.instagram.com/rohis_charity/" target="_blank">
+                        <img src="C:\Users\rRohi\Downloads\Charity Website\Chairity- Website\images\19.png" alt="Instagram Post 2">
+                        <p>Approximately 30% of children in Wales live in poverty, and notably, 26% of these children are from working households.</p>
+                    </a>
+                </div>
+                <!-- Instagram Post Slot 3 -->
+                <div class="instagram-slot">
+                    <a href="https://www.instagram.com/rohis_charity/" target="_blank">
+                        <img src="C:\Users\rRohi\Downloads\Charity Website\Chairity- Website\images\21.png">
+                        <p>As of 2024, approximately 44% of the global population—around 3.5 billion people—live on less than $6.85 per day, a poverty line relevant for upper-middle-income countries.</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Other Charity Pages Section -->
+        <section class="content-section" id="other-charities">
+            <h2>Other Charity Pages</h2>
+            <div class="charity-grid">
+                <!-- Charity Card 1 -->
+                <div class="charity-card">
+                    <h3>Pembrokeshire Action To Combat Hardship (PATCH)</h3>
+                    <p>Providing emergency relief to families in financial crisis in Wales.</p>
+                    <p><a href="https://patchcharity.org.uk" target="_blank">Visit PATCH</a></p>
+                </div>
+                <!-- Charity Card 2 -->
+                <div class="charity-card">
+                    <h3>Shelter Cymru</h3>
+                    <p>Offering advice, advocacy, and legal support to tackle housing issues in Wales.</p>
+                    <p><a href="https://sheltercymru.org.uk" target="_blank">Visit Shelter Cymru</a></p>
+                </div>
+                <!-- Charity Card 3 -->
+                <div class="charity-card">
+                    <h3>Oxfam International</h3>
+                    <p>A global charity working to end poverty and injustice through sustainable change.</p>
+                    <p><a href="https://www.oxfam.org/en" target="_blank">Visit Oxfam</a></p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Rohi's Charity &amp; Awareness. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // JavaScript for sticky header behavior: hide on scroll down, show on scroll up
+        let lastScrollY = window.scrollY;
+        const stickyContainer = document.getElementById('stickyContainer');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > lastScrollY) {
+                stickyContainer.classList.add('hidden');
+            } else {
+                stickyContainer.classList.remove('hidden');
+            }
+            lastScrollY = window.scrollY;
+        });
+    </script>
+</body>
+</html>

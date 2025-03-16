@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Contact - Rohi's Charity & Awareness</title>
+	<style>
+		body {
+			font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+			margin: 0;
+			padding: 0;
+			background: #e9f5f5;
+			color: #333;
+			line-height: 1.6;
+		}
+		/* Fixed header and navbar container */
+		.sticky-container {
+			position: fixed;
+			top: 0;
+			width: 100%;
+			z-index: 1000;
+			transition: transform 0.3s ease-in-out;
+			background: transparent;
+		}
+
+		.hidden {
+			transform: translateY(-100%);
+		}
+
+		header {
+			background-color: #2a9d8f;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
+		}
+
+			header h1 {
+				margin: 0;
+				font-size: 2.5em;
+			}
+
+		nav {
+			background: #264653;
+			padding: 10px;
+			text-align: center;
+		}
+
+			nav a {
+				color: #f4a261;
+				text-decoration: none;
+				margin: 0 15px;
+				font-size: 16px;
+				transition: color 0.3s;
+			}
+
+				nav a:hover {
+					color: #e76f51;
+				}
+		/* Spacer to reserve header space */
+		.spacer {
+			height: 160px; /* Adjust if header/nav height changes */
+		}
+
+		.container {
+			padding: 20px;
+			max-width: 1000px;
+			margin: 0 auto;
+		}
+
+		.content-section {
+			background: #fff;
+			margin-bottom: 40px;
+			padding: 20px;
+			border-radius: 8px;
+			box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+		}
+
+			.content-section h2 {
+				color: #264653;
+				margin-bottom: 15px;
+			}
+
+		form {
+			background: #f0f4f8;
+			padding: 20px;
+			border-radius: 8px;
+			box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+		}
+
+			form label {
+				display: block;
+				margin-bottom: 5px;
+				font-weight: bold;
+			}
+
+			form input, form textarea {
+				width: 100%;
+				padding: 8px;
+				margin-bottom: 15px;
+				border: 1px solid #ccc;
+				border-radius: 4px;
+			}
+
+			form button {
+				background: #e76f51;
+				color: #fff;
+				border: none;
+				padding: 10px 20px;
+				font-size: 16px;
+				border-radius: 4px;
+				cursor: pointer;
+			}
+
+				form button:hover {
+					background: #d45c3f;
+				}
+
+		footer {
+			background: #2a9d8f;
+			color: #fff;
+			text-align: center;
+			padding: 10px;
+			font-size: 0.9em;
+		}
+	</style>
+</head>
+<body>
+	<!-- Fixed header and navbar -->
+	<div class="sticky-container" id="stickyContainer">
+		<header>
+			<h1>Contact</h1>
+			<p>We'd Love to Hear From You</p>
+		</header>
+		<nav>
+			<a href="index.html">Home</a>
+			<a href="poverty-facts.html">Poverty Facts</a>
+			<a href="social-media.html">Social Media</a>
+			<a href="take-action.html">Take Action</a>
+			<a href="contact.html">Contact</a>
+		</nav>
+	</div>
+
+	<!-- Spacer element so content is not hidden behind fixed header -->
+	<div class="spacer"></div>
+
+	<div class="container">
+		<!-- Contact Form Section -->
+		<section class="content-section" id="contact-form">
+			<h2>Get in Touch</h2>
+			<p>If you have any questions, suggestions, or would like to get involved, please fill out the form below and we will get back to you as soon as possible.</p>
+			<form action="#" method="post">
+				<label for="name">Name:</label>
+				<input type="text" id="name" name="name" required>
+
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email" required>
+
+				<label for="message">Message:</label>
+				<textarea id="message" name="message" rows="6" required></textarea>
+
+				<button type="submit">Send Message</button>
+			</form>
+		</section>
+
+		<!-- Alternative Contact Information Section -->
+		<section class="content-section" id="contact-info">
+			<h2>Other Ways to Reach Us</h2>
+			<p>You can also contact us directly via email at <a href="mailto:contact@rohischarity.com">contact@rohischarity.com</a> or follow us on our social media platforms (coming soon).</p>
+		</section>
+	</div>
+
+	<footer>
+		<p>&copy; 2025 Rohi's Charity & Awareness. All Rights Reserved.</p>
+	</footer>
+
+	<script>
+		// JavaScript for sticky header behavior: hide on scroll down, show on scroll up
+		let lastScrollY = window.scrollY;
+		const stickyContainer = document.getElementById('stickyContainer');
+
+		window.addEventListener('scroll', () => {
+			if (window.scrollY > lastScrollY) {
+				// Scrolling down
+				stickyContainer.classList.add('hidden');
+			} else {
+				// Scrolling up
+				stickyContainer.classList.remove('hidden');
+			}
+			lastScrollY = window.scrollY;
+		});
+	</script>
+</body>
+</html>
