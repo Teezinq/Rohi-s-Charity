@@ -1,216 +1,209 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Poverty Facts - Rohi's Charity & Awareness</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-            background: #f0f4f8;
-            color: #333;
-            line-height: 1.6;
-        }
-        /* Sticky header and navbar container */
-        .sticky-container {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            z-index: 1000;
-            transition: transform 0.3s ease-in-out;
-        }
-
-        .hidden {
-            transform: translateY(-100%);
-        }
-
-        header {
-            background-color: #2a9d8f;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
-
-        nav {
-            background: #264653;
-            padding: 10px;
-            text-align: center;
-        }
-
-            nav a {
-                color: #f4a261;
-                text-decoration: none;
-                margin: 0 15px;
-                font-size: 16px;
-                transition: color 0.3s;
-            }
-
-                nav a:hover {
-                    color: #e76f51;
-                }
-        /* Placeholder to reserve header space */
-        .header-placeholder {
-            height: 160px; /* Adjust based on the combined height of header + nav */
-        }
-
-        .container {
-            padding: 20px;
-            max-width: 1000px;
-            margin: 0 auto;
-        }
-
-        h1, h2, h3 {
-            color: #264653;
-        }
-
-        section {
-            margin-bottom: 40px;
-            background: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-
-        ul {
-            list-style-type: disc;
-            padding-left: 20px;
-        }
-
-        footer {
-            background: #2a9d8f;
-            color: #fff;
-            text-align: center;
-            padding: 10px;
-            font-size: 0.9em;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Poverty Facts - Rohi's Charity & Awareness</title>
+  <style>
+    /* General Styles */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f0f4f8;
+      color: #333;
+      line-height: 1.6;
+    }
+    a {
+      text-decoration: none;
+    }
+    /* Fixed header and navbar container */
+    .sticky-container {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+      transition: transform 0.3s ease-in-out;
+      background: transparent;
+    }
+    .hidden {
+      transform: translateY(-100%);
+    }
+    header {
+      background-color: #2a9d8f;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.8em;
+    }
+    header p {
+      margin: 5px 0 0;
+      font-size: 1.2em;
+    }
+    nav {
+      background: #264653;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: #f4a261;
+      margin: 0 15px;
+      font-size: 16px;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #e76f51;
+    }
+    /* Spacer to reserve header space */
+    .spacer {
+      height: 160px;
+    }
+    /* Container for page content */
+    .container {
+      padding: 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    /* Content Sections */
+    .content-section {
+      background: #fff;
+      margin-bottom: 40px;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .content-section h2 {
+      color: #264653;
+      margin-bottom: 15px;
+      font-size: 2em;
+    }
+    .content-section p {
+      font-size: 1.1em;
+      margin-bottom: 20px;
+    }
+    /* List Styles */
+    ul {
+      list-style-type: disc;
+      padding-left: 20px;
+      text-align: left;
+    }
+    footer {
+      background: #2a9d8f;
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+      font-size: 0.9em;
+    }
+  </style>
 </head>
 <body>
-    <div class="sticky-container" id="stickyContainer">
-        <header>
-            <h1>Poverty Facts</h1>
-            <p>Understanding Poverty in Wales and Globally</p>
-        </header>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="poverty-facts.html">Poverty Facts</a>
-            <a href="social-media.html">Social Media</a>
-            <a href="take-action.html">Take Action</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-    </div>
-
-    <!-- Placeholder div to reserve space for the fixed header/navbar -->
-    <div class="header-placeholder"></div>
-
-    <div class="container">
-        <!-- Overview Section -->
-        <section id="overview">
-            <h2>What is Poverty?</h2>
-            <p>Poverty is defined as the state of one's living conditions based on their financial position. Many are considered to be living in poverty due to various social, economic, and political factors. Internationally, poverty is often measured by daily income. For example, individuals living on less than $2.15 per day (or even $1.90, depending on the measure) are classified as living in extreme poverty.</p>
-            <p>In Wales, research such as the 2016-17 National Survey for Wales indicated that 1% of households had received food from a food bank in the last 12 months, hinting at local challenges that echo global trends.</p>
-        </section>
-
-        <!-- Why and How Section -->
-        <section id="why-how">
-            <h2>Why and How Does Poverty Occur?</h2>
-            <h3>Why?</h3>
-            <p>Although poverty does not have a single cause, several factors contribute to it. Commonly, these include rising living costs (food, rent, bills, etc.), low wages, and a lack of job opportunities—especially for specific groups. These factors create a cycle that perpetuates poverty both locally and globally.</p>
-
-            <h3>How?</h3>
-            <p>Today, poverty is addressed in various ways including charitable efforts, community awareness campaigns, and social initiatives. However, despite these efforts, poverty rates in many places remain high or are even growing. By increasing awareness and instituting targeted measures (such as international laws), there is hope for significant reduction in poverty levels.</p>
-        </section>
-
-        <!-- Rationale Section -->
-        <section id="rationale">
-            <h2>Rationale</h2>
-            <p>The project is built on three main reasons, focusing on how reducing poverty can have a ripple effect in improving economic stability, enhancing public services, and reducing other major social issues. By addressing poverty, we open the door to higher consumer demand, business growth, increased tax revenue, and overall societal well-being.</p>
-        </section>
-
-        <!-- PESTLE Analysis Section -->
-        <section id="pestle">
-            <h2>PESTLE Analysis</h2>
-            <h3>Political</h3>
-            <p>Providing people with their basic needs can reduce violence and conflicts within communities.</p>
-            <h3>Economic</h3>
-            <p>Reducing poverty increases disposable income, boosts consumer demand, and expands the middle class—ultimately driving economic growth.</p>
-            <h3>Social</h3>
-            <p>Improved economic conditions lead to better healthcare, increased participation in social activities, and overall higher quality of life.</p>
-            <h3>Technological</h3>
-            <p>A reduction in poverty means more individuals can participate as innovators, creators, and consumers, accelerating technological advancements.</p>
-            <h3>Legal</h3>
-            <p>With more resources available, legal systems improve and crime rates can decrease, leading to a more secure society.</p>
-            <h3>Environmental</h3>
-            <p>Reducing poverty can lessen the reliance on harmful practices such as illegal wildlife trafficking and promote access to clean energy.</p>
-        </section>
-
-        <!-- Articles and Facts Section -->
-        <section id="articles">
-            <h2>Articles and Research Findings</h2>
-            <p>Below are some key articles and findings from various sources:</p>
-            <ul>
-                <li>
-                    <strong>World Bank:</strong> Efforts over 30 years reduced global extreme poverty, though the COVID-19 pandemic increased numbers by 70 million.
-                    <br><em>Key Facts:</em> Extreme poverty rate increased to 9.3% in 2019; up to 685 million people may still be in extreme poverty by the end of 2022.
-                </li>
-                <li>
-                    <strong>Compassion:</strong> Nearly one in ten people worldwide live below the international poverty line, with 689 million surviving on less than $1.90 a day.
-                </li>
-                <li>
-                    <strong>Brookings (Bookings):</strong> Significant progress was seen in 2015 with 728 million people living in poverty, though challenges remain in Africa.
-                </li>
-                <li>
-                    <strong>World Vision:</strong> 9.2% of the global population lives on less than $2.15 a day, with a high concentration of extreme poverty in sub-Saharan Africa.
-                </li>
-                <li>
-                    <strong>The Guardian:</strong> Since 1981, about 1 billion people have escaped extreme poverty, though 9.1% of the global population was estimated to be in poverty in 2016.
-                </li>
-                <li>
-                    <strong>United Nations Global Compact:</strong> Approximately 10% of the global population lives in extreme poverty, influenced by conflicts, climate change, and COVID-19.
-                </li>
-                <li>
-                    <strong>DoSomething.org:</strong> Highlights that poverty is multifaceted—beyond income, it includes access to healthcare, education, and housing.
-                </li>
-                <li>
-                    <strong>Public Health (Northern Ireland):</strong> Economic inequality significantly impacts health with higher poverty rates noted in Northern Ireland compared to Great Britain.
-                </li>
-            </ul>
-        </section>
-
-        <!-- Abstract Section -->
-        <section id="abstract">
-            <h2>Abstract</h2>
-            <p>Poverty is not an unsolvable problem but an option—a result of choices, policies, and systemic issues like greed and corruption. Ending poverty could initiate a domino effect, potentially addressing many other major global challenges.</p>
-        </section>
-
-        <!-- Author Credit -->
-        <section id="credits">
-            <p><strong>Author:</strong> Rohi Nkomo</p>
-            <p>(All referenced articles and facts have been credited; all other text is original work.)</p>
-        </section>
-    </div>
-
-    <footer>
-        <p>&copy; 2025 Rohi's Charity & Awareness. All Rights Reserved.</p>
-    </footer>
-
-    <script>
-        // JavaScript to hide header on scroll down and show on scroll up
-        let lastScrollY = window.scrollY;
-        const stickyContainer = document.getElementById('stickyContainer');
-
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > lastScrollY) {
-                // Scrolling down
-                stickyContainer.classList.add('hidden');
-            } else {
-                // Scrolling up
-                stickyContainer.classList.remove('hidden');
-            }
-            lastScrollY = window.scrollY;
-        });
-    </script>
+  <!-- Fixed header and navbar -->
+  <div class="sticky-container" id="stickyContainer">
+    <header>
+      <h1>Poverty Facts</h1>
+      <p>Understanding Poverty in Wales and Globally</p>
+    </header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="poverty-facts.html">Poverty Facts</a>
+      <a href="social-media.html">Social Media</a>
+      <a href="take-action.html">Take Action</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+  
+  <!-- Spacer so content is not hidden behind the sticky header -->
+  <div class="spacer"></div>
+  
+  <div class="container">
+    <!-- Overview Section -->
+    <section class="content-section" id="overview">
+      <h2>What is Poverty?</h2>
+      <p>Poverty is defined as the state of one's living conditions based on their financial position. Many people are classified as living in poverty due to various social, economic, and political factors. Internationally, poverty is often measured by daily income—individuals living on less than $2.15 (or $1.90, depending on the measure) are considered to be in extreme poverty.</p>
+      <p>In Wales, research such as the 2016-17 National Survey for Wales noted that 1% of households had received food from a food bank in the past 12 months, highlighting local challenges that mirror global trends.</p>
+    </section>
+    
+    <!-- Why and How Section -->
+    <section class="content-section" id="why-how">
+      <h2>Why and How Does Poverty Occur?</h2>
+      <h3>Why?</h3>
+      <p>Poverty arises from a mix of factors—rising living costs, low wages, lack of job opportunities, and systemic issues. These challenges create a cycle that perpetuates poverty both locally and globally.</p>
+      <h3>How?</h3>
+      <p>Efforts to tackle poverty include charitable initiatives, community awareness campaigns, and policy changes. However, despite these actions, poverty rates remain high in many areas, underscoring the need for continued and targeted efforts.</p>
+    </section>
+    
+    <!-- Rationale Section -->
+    <section class="content-section" id="rationale">
+      <h2>Rationale</h2>
+      <p>Reducing poverty has a multiplier effect—improving economic stability, public services, and social well-being. By addressing poverty, we pave the way for higher consumer demand, business growth, increased tax revenue, and overall societal improvement.</p>
+    </section>
+    
+    <!-- PESTLE Analysis Section -->
+    <section class="content-section" id="pestle">
+      <h2>PESTLE Analysis</h2>
+      <h3>Political</h3>
+      <p>Providing basic needs helps reduce conflicts and social unrest.</p>
+      <h3>Economic</h3>
+      <p>Reducing poverty boosts disposable income, which in turn increases consumer demand and spurs economic growth.</p>
+      <h3>Social</h3>
+      <p>Better economic conditions lead to improved healthcare and social engagement, raising overall quality of life.</p>
+      <h3>Technological</h3>
+      <p>When more people participate in the economy, it drives technological innovation and access.</p>
+      <h3>Legal</h3>
+      <p>A stronger economy supports better legal enforcement and reduces crime rates.</p>
+      <h3>Environmental</h3>
+      <p>Reducing poverty lessens the need for environmentally harmful practices and promotes sustainable resource use.</p>
+    </section>
+    
+    <!-- Articles and Research Findings Section -->
+    <section class="content-section" id="articles">
+      <h2>Articles and Research Findings</h2>
+      <p>Below are key articles and facts from various sources:</p>
+      <ul>
+        <li><strong>World Bank:</strong> Efforts over 30 years reduced global extreme poverty, but the COVID-19 pandemic increased numbers by 70 million. (Extreme poverty rate rose to 9.3% in 2019; up to 685 million people may still be in extreme poverty by the end of 2022.)</li>
+        <li><strong>Compassion:</strong> Nearly one in ten people worldwide live below the international poverty line, with 689 million surviving on less than $1.90 a day.</li>
+        <li><strong>Brookings:</strong> In 2015, 728 million people lived in poverty, though challenges remain, especially in Africa.</li>
+        <li><strong>World Vision:</strong> 9.2% of the global population lives on less than $2.15 a day, with extreme poverty concentrated in sub-Saharan Africa.</li>
+        <li><strong>The Guardian:</strong> Since 1981, about 1 billion people have escaped extreme poverty, though 9.1% of the global population was estimated to be in poverty in 2016.</li>
+        <li><strong>UN Global Compact:</strong> Approximately 10% of the global population lives in extreme poverty, influenced by conflicts, climate change, and COVID-19.</li>
+        <li><strong>DoSomething.org:</strong> Highlights that poverty is multifaceted—beyond income, it includes access to healthcare, education, and housing.</li>
+        <li><strong>Public Health (Northern Ireland):</strong> Economic inequality significantly impacts health, with higher poverty rates in Northern Ireland compared to Great Britain.</li>
+      </ul>
+    </section>
+    
+    <!-- Abstract Section -->
+    <section class="content-section" id="abstract">
+      <h2>Abstract</h2>
+      <p>Poverty is not an unsolvable problem but an outcome of policy, systemic issues, and choices. Addressing it could trigger a domino effect, helping to alleviate many other global challenges.</p>
+    </section>
+    
+    <!-- Author Credit Section -->
+    <section class="content-section" id="credits">
+      <p><strong>Author:</strong> Rohi Nkomo</p>
+      <p>(All referenced articles and facts are credited; all additional text is original work.)</p>
+    </section>
+  </div>
+  
+  <footer>
+    <p>&copy; 2025 Rohi's Charity & Awareness. All Rights Reserved.</p>
+  </footer>
+  
+  <script>
+    // JavaScript to hide header on scroll down and show on scroll up
+    let lastScrollY = window.scrollY;
+    const stickyContainer = document.getElementById('stickyContainer');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > lastScrollY) {
+        stickyContainer.classList.add('hidden');
+      } else {
+        stickyContainer.classList.remove('hidden');
+      }
+      lastScrollY = window.scrollY;
+    });
+  </script>
 </body>
 </html>
